@@ -1,0 +1,144 @@
+body{
+    background: #dc03dc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4f006c, #ff00ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4f006c, #ff00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: rgb(19, 2, 29);
+}
+
+.tabla{
+  border: 10px solid rgb(229, 88, 229);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+nav{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.banner-css {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(27, 19, 19, 0.9);
+}
+
+.banner-css .section {
+      width: 100%;
+}
+  
+
+
+
+
+
+footer.page-footer {
+    margin: 0;
+
+}
+  
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+.iframe-section{  
+    background-image: url(https://cutewallpaper.org/21/the-midnight-wallpaper/Night-HD-Wallpaper-Background-Image-2560x1440-ID-.jpg);
+}
+
+.formulario{
+    background: #262326;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #5e075e, #3a0551);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #5e075e, #3a0551); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* label color */
+  .input-field label {
+    color: #000;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #000;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #000;
+}
+
+
+@media only screen and (max-width : 992px) {
+    .banner-css .section {
+        position: absolute;
+        top: 40%;
+      }
+
+    #index-banner .section {
+        top: 10%;
+      }
+
+}
+
+@media only screen and (max-width: 810px){
+  .banner-css {
+    min-height: 200px;
+    line-height: 0;
+    height: auto;
+    color: rgba(176, 0, 0, 0.9);
+    -webkit-text-stroke:0.3px black;
+    }
+
+    iframe{
+      width: 400px;
+      height: 200px;
+    }
+
+}
+
+@media only screen and (max-width : 576px) {
+
+    .banner-css {
+      min-height: 400px;
+      line-height: 0;
+      height: auto;
+      color: rgba(176, 0, 0, 0.9);
+      -webkit-text-stroke:0.3px black;
+  }
+    
+    iframe{
+      width: 300px;
+      height: 200px;
+    }
+
+    #index-banner .section {
+        top: 0;
+    
+    }
+
+}
+  
