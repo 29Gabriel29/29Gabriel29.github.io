@@ -14,12 +14,12 @@ body.dark-mode {
     color: #ffffff;
 }
 
-/* El Navbar se queda blanco por tu petición */
+/* Navbar (white) */
 body.dark-mode nav.deep-purple.lighten-5 {
     background-color: #ede7f6 !important;
 }
 
-/* El H1 cambia a Púrpura/Rosa Neón en modo noche */
+/* El H1 cambia a Púrpura/Rosa en modo noche (efecto NEON) */
 body.dark-mode .dynamic-header {
     color: #d500f9 !important;
     text-shadow: 0 0 10px #d500f9, 0 0 20px #ff00ff;
@@ -45,7 +45,7 @@ nav ul a, nav .brand-logo {
     margin-top: 20px;
 }
 
-/* --- FORMULARIO OPTIMIZADO --- */
+/* --- FORMULARIO --- */
 .formulario {
     background: linear-gradient(to left, #5e075e, #3a0551);
     border-top: 4px solid #d500f9;
@@ -68,7 +68,7 @@ nav ul a, nav .brand-logo {
     font-weight: bold;
 }
 
-/* --- TABLA OPTIMIZADA --- */
+/* --- TABLA --- */
 .tabla-section {
     padding: 40px 0;
 }
@@ -85,7 +85,7 @@ nav ul a, nav .brand-logo {
 
 .synth-table th { color: #ff00ff; text-transform: uppercase; }
 
-/* --- RESPONSIVIDAD --- */
+/* --- RESPONSIVE --- */
 @media only screen and (max-width : 992px) {
     #index-banner .section { top: 10%; }
 }
