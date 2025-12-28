@@ -1,144 +1,115 @@
-body{
-    background: #dc03dc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #4f006c, #ff00ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #4f006c, #ff00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* --- ESTILOS BASE --- */
+body {
+    background: #dc03dc;
+    background: -webkit-linear-gradient(to left, #4f006c, #ff00ff);
+    background: linear-gradient(to left, #4f006c, #ff00ff);
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bolder;
+    transition: background 0.5s ease;
 }
 
-nav ul a,
-nav .brand-logo {
-  color: rgb(19, 2, 29);
+/* --- MODO NOCHE --- */
+body.dark-mode {
+    background: #121212 !important; /* Fondo casi negro */
+    color: #ffffff;
 }
 
-.tabla{
-  border: 10px solid rgb(229, 88, 229);
+/* El Navbar se queda blanco por tu petición */
+body.dark-mode nav.deep-purple.lighten-5 {
+    background-color: #ede7f6 !important;
 }
 
-main {
-    flex: 1 0 auto;
+/* El H1 cambia a Púrpura/Rosa Neón en modo noche */
+body.dark-mode .dynamic-header {
+    color: #d500f9 !important;
+    text-shadow: 0 0 10px #d500f9, 0 0 20px #ff00ff;
 }
 
-nav{
-    padding-top: 0px;
-    margin-top: 0px;
+/* --- COMPONENTES --- */
+nav ul a, nav .brand-logo {
+    color: rgb(19, 2, 29);
 }
 
 .banner-css {
     min-height: 380px;
-    line-height: 0;
     height: auto;
     color: rgba(27, 19, 19, 0.9);
 }
 
-.banner-css .section {
-      width: 100%;
-}
-  
-
-
-
-
-
-footer.page-footer {
-    margin: 0;
-
-}
-  
-.icon-block {
-    padding: 0 15px;
-}
-
-.icon-block .material-icons {
-    font-size: inherit;
-}
-
-.iframe-section{  
+.iframe-section {  
     background-image: url(https://cutewallpaper.org/21/the-midnight-wallpaper/Night-HD-Wallpaper-Background-Image-2560x1440-ID-.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
 }
 
-.formulario{
-    background: #262326;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #5e075e, #3a0551);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #5e075e, #3a0551); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* --- FORMULARIO OPTIMIZADO --- */
+.formulario {
+    background: linear-gradient(to left, #5e075e, #3a0551);
+    border-top: 4px solid #d500f9;
+    border-bottom: 4px solid #ff00ff;
+    margin-top: 50px;
+    padding-bottom: 40px;
 }
 
-/* label color */
-  .input-field label {
-    color: #000;
-  }
-  /* label focus color */
-  .input-field input[type=text]:focus + label {
-    color: #000;
-  }
-  /* label underline focus color */
-  .input-field input[type=text]:focus {
-    border-bottom: 1px solid #000;
-    box-shadow: 0 1px 0 0 #000;
-  }
-  /* valid color */
-  .input-field input[type=text].valid {
-    border-bottom: 1px solid #000;
-    box-shadow: 0 1px 0 0 #000;
-  }
-  /* invalid color */
-  .input-field input[type=text].invalid {
-    border-bottom: 1px solid #000;
-    box-shadow: 0 1px 0 0 #000;
-  }
-  /* icon prefix focus color */
-  .input-field .prefix.active {
-    color: #000;
+.input-field label { color: #fff !important; }
+.input-field input { 
+    color: #fff !important; 
+    border-bottom: 1px solid #ff00ff !important; 
+}
+.input-field .prefix { color: #d500f9 !important; }
+
+.synth-btn {
+    background-color: #d500f9 !important;
+    border: 2px solid #ff00ff;
+    box-shadow: 0 0 10px #d500f9;
+    font-weight: bold;
 }
 
+/* --- TABLA OPTIMIZADA --- */
+.tabla-section {
+    padding: 40px 0;
+}
 
+.synth-table {
+    border: 8px solid #e558e5; /* El borde que tenías */
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    color: white !important;
+}
+
+.synth-table thead {
+    background-color: #4a148c;
+}
+
+.synth-table th { color: #ff00ff; text-transform: uppercase; }
+
+/* --- RESPONSIVIDAD --- */
 @media only screen and (max-width : 992px) {
-    .banner-css .section {
-        position: absolute;
-        top: 40%;
-      }
-
-    #index-banner .section {
-        top: 10%;
-      }
-
+    #index-banner .section { top: 10%; }
 }
 
-@media only screen and (max-width: 810px){
-  .banner-css {
-    min-height: 200px;
-    line-height: 0;
-    height: auto;
-    color: rgba(176, 0, 0, 0.9);
-    -webkit-text-stroke:0.3px black;
-    }
-
-    iframe{
-      width: 400px;
-      height: 200px;
-    }
-
+@media only screen and (max-width: 600px) {
+    .banner-css { min-height: 400px; }
+    iframe { height: 200px; }
 }
 
-@media only screen and (max-width : 576px) {
-
-    .banner-css {
-      min-height: 400px;
-      line-height: 0;
-      height: auto;
-      color: rgba(176, 0, 0, 0.9);
-      -webkit-text-stroke:0.3px black;
-  }
-    
-    iframe{
-      width: 300px;
-      height: 200px;
-    }
-
-    #index-banner .section {
-        top: 0;
-    
-    }
-
+.typing-text {
+    min-height: 1.2em; /* Evita que el banner "salte" cuando el texto está vacío */
+    border-right: 2px solid rgba(255, 255, 255, 0.75); /* Cursor parpadeante opcional */
 }
-  
+
+/* Efecto de cursor parpadeante */
+#typing-text::after {
+    content: '|';
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
